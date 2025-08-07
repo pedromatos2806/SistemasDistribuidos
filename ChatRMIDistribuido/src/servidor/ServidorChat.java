@@ -31,13 +31,13 @@ public class ServidorChat extends UnicastRemoteObject implements ServidorChatInt
     public synchronized void adicionarUsuario(String nomeUsuario, ClienteChatInterface referenciaCliente) throws RemoteException {
         usuarios.put(nomeUsuario, referenciaCliente);
         enviarMensagem(nomeUsuario + " entrou no chat.", "Sistema");
-        System.out.println("Usu√°rio adicionado: " + nomeUsuario);
+        System.out.println("Usu·rio adicionado: " + nomeUsuario);
     }
 
     @Override
     public synchronized void removerUsuario(String nomeUsuario) throws RemoteException {
         usuarios.remove(nomeUsuario);
         enviarMensagem(nomeUsuario + " saiu do chat.", "Sistema");
-        System.out.println("Usu√°rio removido: " + nomeUsuario);
+        System.out.println("Usu·rio removido: " + nomeUsuario);
     }
 }

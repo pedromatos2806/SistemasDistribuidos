@@ -4,7 +4,7 @@ package cliente;
 public class ClienteChatApp {
     public static void main(String[] args) {
         if (args.length < 1) {
-            System.out.println("Informe seu nome de usuário como argumento!");
+            System.out.println("Informe seu nome de usuario como argumento:");
             return;
         }
         String nomeUsuario = args[0];

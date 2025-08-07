@@ -36,7 +36,7 @@ public class ClienteChat extends UnicastRemoteObject implements ClienteChatInter
                 texto = scanner.nextLine();
                 if (texto.equalsIgnoreCase("/sair")) {
                     servidor.removerUsuario(nomeUsuario);
-                    System.out.println("VocÃª saiu do chat.");
+                    System.out.println("Você saiu do chat....");
                     break;
                 }
                 servidor.enviarMensagem(texto, nomeUsuario);

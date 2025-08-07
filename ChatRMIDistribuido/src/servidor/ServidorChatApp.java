@@ -10,7 +10,7 @@ public class ServidorChatApp {
             ServidorChat servidor = new ServidorChat();
             Registry registro = LocateRegistry.createRegistry(1099);
             registro.rebind("ServidorChat", servidor);
-            System.out.println("Servidor RMI pronto para receber conex√µes!");
+            System.out.println("Servidor RMI pronto para receber conexıes!!!!");
         } catch (Exception e) {
             System.err.println("Erro ao iniciar o servidor: " + e.getMessage());
             e.printStackTrace();
