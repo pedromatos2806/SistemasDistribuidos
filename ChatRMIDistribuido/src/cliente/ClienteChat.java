@@ -29,14 +29,14 @@ public class ClienteChat extends UnicastRemoteObject implements ClienteChatInter
             Registry registro = LocateRegistry.getRegistry("localhost", 1099);
             servidor = (ServidorChatInterface) registro.lookup("ServidorChat");
             servidor.adicionarUsuario(nomeUsuario, this);
-            System.out.println("Bem-vindo ao chat, " + nomeUsuario + "!");
+            System.out.println("**** Bem-vindo ao chat, " + nomeUsuario + "! ****");
             Scanner scanner = new Scanner(System.in);
             String texto;
             while (true) {
                 texto = scanner.nextLine();
                 if (texto.equalsIgnoreCase("/sair")) {
                     servidor.removerUsuario(nomeUsuario);
-                    System.out.println("Você saiu do chat....");
+                    System.out.println("**** VocÃª saiu do chat.... ****");
                     break;
                 }
                 servidor.enviarMensagem(texto, nomeUsuario);
