@@ -1,0 +1,43 @@
+# Ignorar arquivos e pastas desnecessários para commit
+
+# Compilados Java
+*.class
+
+# Pastas de saída de compilação
+ChatRMIDistribuido/bin/
+Semaforo_Produtor_Consumidor/bin/
+SincronizacaoDeRelogios/bin/
+
+# Arquivos temporários e de sistema
+*.log
+*.tmp
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Configurações de IDE
+/.vscode/
+/.idea/
+*.iml
+*.lock
+*.metadata/
+# Arquivos de backup
+*~
+
+
+.sonarlint/
+*.lck
+*.xd
+*.project
+
+# Outros arquivos que não devem ir para o repositório
+!ChatRMIDistribuido/src/**
+!Semaforo_Produtor_Consumidor/src/**
+!SincronizacaoDeRelogios/src/**
+!ChatRMIDistribuido/README.md
+!Semaforo_Produtor_Consumidor/README.md
+!SincronizacaoDeRelogios/README.md
+!README.md
+
+# Permitir arquivos fonte e documentação
